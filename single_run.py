@@ -79,11 +79,11 @@ stder = 6 # st deviations to plot on each side
 epsran = np.arange(-stder*sig_eps, stder*sig_eps, 0.01)
 
 # evolved niche in presence of competition
-mlf1, mlf2 = niche_finder(af_, bf_, nf_, epsran, A, B, Gaa, Gbb, r, kar, sig_eps, sig_e, sig_s, sig_u)
+mlf1, mlf2 = niche_finder_fund(af_, bf_, nf_, epsran, A, B, Gaa, Gbb, r, kar, sig_eps, sig_e, sig_s, sig_u)
 # evolved fundamental niche
-mlfc1, mlfc2 = niche_finder_fund(af_, bf_, nf_, epsran, A, B, Gaa, Gbb, r, kar, sig_eps, sig_e, sig_s, sig_u)
+mlfc1, mlfc2 = niche_finder_comp(af_, bf_, nf_, epsran, A, B, Gaa, Gbb, r, kar, sig_eps, sig_e, sig_s, sig_u)
 # niche of initial species
-mli1, mli2 = niche_finder(A, B, n0, epsran, A, B, Gaa, Gbb, r, kar, sig_eps, sig_e, sig_s, sig_u)
+mli1, mli2 = niche_finder_fund(A, B, n0, epsran, A, B, Gaa, Gbb, r, kar, sig_eps, sig_e, sig_s, sig_u)
 
 #plotting niche
 fig, ax = plt.subplots(figsize=(5,4))
