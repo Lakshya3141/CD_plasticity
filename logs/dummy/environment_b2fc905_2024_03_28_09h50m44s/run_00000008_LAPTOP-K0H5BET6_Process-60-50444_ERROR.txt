@@ -1,0 +1,9 @@
+2024-03-28 09:51:59,799 pypet ERROR    ERROR occurred during a single run! 
+Traceback (most recent call last):
+  File "C:\Users\laksh\anaconda3\lib\site-packages\pypet\environment.py", line 259, in _sigint_handling_single_run
+    return _single_run(kwargs)
+  File "C:\Users\laksh\anaconda3\lib\site-packages\pypet\environment.py", line 314, in _single_run
+    result = runfunc(traj, *runargs, **kwrunparams)
+  File "C:\Users\laksh\Downloads\CD_RevisedPlasticity\helper_exploration.py", line 114, in run_main1
+    z1 = a[:,0] + b[:,0]*epsd
+ValueError: operands could not be broadcast together with shapes (200000,) (200000,2) 

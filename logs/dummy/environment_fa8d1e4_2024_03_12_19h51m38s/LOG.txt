@@ -1,0 +1,35 @@
+2024-03-12 19:51:40,671 STDOUT INFO     Established redirection of `stdout`.
+2024-03-12 19:51:40,671 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\final_sim\EvolvingPlasticity_main.hdf5`.
+2024-03-12 19:51:40,671 pypet.environment.Environment INFO     Environment initialized.
+2024-03-12 19:51:40,671 STDOUT INFO     Adding Parameters
+2024-03-12 19:51:40,671 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-12 19:51:40,736 STDOUT INFO     added exploration
+2024-03-12 19:51:40,736 pypet.environment.Environment INFO     I am preparing the Trajectory for the experiment and initialise the store.
+2024-03-12 19:51:40,746 pypet.environment.Environment INFO     Initialising the storage for the trajectory.
+2024-03-12 19:51:40,749 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 19:51:40,814 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 19:51:40,830 pypet.environment.Environment INFO     
+************************************************************
+STARTING runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-12 19:51:40,830 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 19:51:40,845 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 19:51:42,901 pypet.environment.MultiprocContext INFO     Starting the Storage Queue!
+2024-03-12 19:51:42,961 pypet.environment.Environment INFO     Starting multiprocessing with at most 24 processes running at the same time.
+2024-03-12 19:51:42,977 pypet INFO     PROGRESS: Finished     0/10000 runs [                    ]  0.0%
+2024-03-12 20:13:58,023 pypet INFO     PROGRESS: Finished   500/10000 runs [=                   ]  5.0%, remaining: 7:02:46
+2024-03-12 20:35:57,913 pypet INFO     PROGRESS: Finished  1000/10000 runs [==                  ] 10.0%, remaining: 6:38:14
+2024-03-12 20:58:01,586 pypet INFO     PROGRESS: Finished  1500/10000 runs [===                 ] 15.0%, remaining: 6:15:45
+2024-03-12 21:20:00,501 pypet INFO     PROGRESS: Finished  2000/10000 runs [====                ] 20.0%, remaining: 5:53:10
+2024-03-12 21:54:35,988 pypet INFO     PROGRESS: Finished  2500/10000 runs [=====               ] 25.0%, remaining: 6:08:39
+2024-03-12 22:17:33,027 pypet INFO     PROGRESS: Finished  3000/10000 runs [======              ] 30.0%, remaining: 5:40:16
+2024-03-12 22:40:43,648 pypet INFO     PROGRESS: Finished  3500/10000 runs [=======             ] 35.0%, remaining: 5:13:52
+2024-03-12 23:03:32,388 pypet INFO     PROGRESS: Finished  4000/10000 runs [========            ] 40.0%, remaining: 4:47:44
+2024-03-12 23:26:10,331 pypet INFO     PROGRESS: Finished  4500/10000 runs [=========           ] 45.0%, remaining: 4:22:06
+2024-03-12 23:48:37,758 pypet INFO     PROGRESS: Finished  5000/10000 runs [==========          ] 50.0%, remaining: 3:56:54
+2024-03-13 00:10:56,367 pypet INFO     PROGRESS: Finished  5500/10000 runs [===========         ] 55.0%, remaining: 3:32:05
+2024-03-13 00:33:17,339 pypet INFO     PROGRESS: Finished  6000/10000 runs [============        ] 60.0%, remaining: 3:07:42
+2024-03-13 00:57:02,856 pypet INFO     PROGRESS: Finished  6500/10000 runs [=============       ] 65.0%, remaining: 2:44:24
+2024-03-13 01:19:22,402 pypet INFO     PROGRESS: Finished  7000/10000 runs [==============      ] 70.0%, remaining: 2:20:25

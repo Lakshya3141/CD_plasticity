@@ -1,0 +1,79 @@
+2024-03-11 14:40:26,485 STDOUT INFO     Established redirection of `stdout`.
+2024-03-11 14:40:26,488 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\long_sim\NoFluc_main.hdf5`.
+2024-03-11 14:40:26,488 pypet.storageservice.HDF5StorageService INFO     You specified ``overwrite_file=True``, so I deleted the file `hdf5\long_sim\NoFluc_main.hdf5`.
+2024-03-11 14:40:26,493 pypet.environment.Environment INFO     Environment initialized.
+2024-03-11 14:40:26,493 STDOUT INFO     Adding Parameters
+2024-03-11 14:40:26,498 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-11 14:40:26,498 STDOUT INFO     added exploration
+2024-03-11 14:40:26,498 pypet.environment.Environment INFO     I am preparing the Trajectory for the experiment and initialise the store.
+2024-03-11 14:40:26,503 pypet.environment.Environment INFO     Initialising the storage for the trajectory.
+2024-03-11 14:40:26,508 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-11 14:40:26,538 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-11 14:40:26,543 pypet.environment.Environment INFO     
+************************************************************
+STARTING runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-11 14:40:26,563 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-11 14:40:26,603 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-11 14:40:31,063 pypet.environment.MultiprocContext INFO     Starting the Storage Queue!
+2024-03-11 14:40:31,217 pypet.environment.Environment INFO     Starting multiprocessing with at most 24 processes running at the same time.
+2024-03-11 14:40:31,217 pypet INFO     PROGRESS: Finished   0/100 runs [                    ]  0.0%
+2024-03-11 14:41:04,260 pypet INFO     PROGRESS: Finished   5/100 runs [=                   ]  5.0%, remaining: 0:10:27
+2024-03-11 14:41:29,035 pypet INFO     PROGRESS: Finished  10/100 runs [==                  ] 10.0%, remaining: 0:08:40
+2024-03-11 14:41:53,337 pypet INFO     PROGRESS: Finished  15/100 runs [===                 ] 15.0%, remaining: 0:07:45
+2024-03-11 14:42:17,383 pypet INFO     PROGRESS: Finished  20/100 runs [====                ] 20.0%, remaining: 0:07:04
+2024-03-11 14:42:41,428 pypet INFO     PROGRESS: Finished  25/100 runs [=====               ] 25.0%, remaining: 0:06:30
+2024-03-11 14:43:05,683 pypet INFO     PROGRESS: Finished  30/100 runs [======              ] 30.0%, remaining: 0:06:00
+2024-03-11 14:43:29,684 pypet INFO     PROGRESS: Finished  35/100 runs [=======             ] 35.0%, remaining: 0:05:31
+2024-03-11 14:43:54,041 pypet INFO     PROGRESS: Finished  40/100 runs [========            ] 40.0%, remaining: 0:05:04
+2024-03-11 14:44:18,270 pypet INFO     PROGRESS: Finished  45/100 runs [=========           ] 45.0%, remaining: 0:04:37
+2024-03-11 14:44:42,596 pypet INFO     PROGRESS: Finished  50/100 runs [==========          ] 50.0%, remaining: 0:04:11
+2024-03-11 14:45:07,880 pypet INFO     PROGRESS: Finished  55/100 runs [===========         ] 55.0%, remaining: 0:03:46
+2024-03-11 14:45:33,698 pypet INFO     PROGRESS: Finished  60/100 runs [============        ] 60.0%, remaining: 0:03:21
+2024-03-11 14:45:57,787 pypet INFO     PROGRESS: Finished  65/100 runs [=============       ] 65.0%, remaining: 0:02:55
+2024-03-11 14:46:21,571 pypet INFO     PROGRESS: Finished  70/100 runs [==============      ] 70.0%, remaining: 0:02:30
+2024-03-11 14:46:45,715 pypet INFO     PROGRESS: Finished  75/100 runs [===============     ] 75.0%, remaining: 0:02:04
+2024-03-11 14:47:09,770 pypet INFO     PROGRESS: Finished  80/100 runs [================    ] 80.0%, remaining: 0:01:39
+2024-03-11 14:47:33,744 pypet INFO     PROGRESS: Finished  85/100 runs [=================   ] 85.0%, remaining: 0:01:14
+2024-03-11 14:47:57,717 pypet INFO     PROGRESS: Finished  90/100 runs [==================  ] 90.0%, remaining: 0:00:49
+2024-03-11 14:48:21,335 pypet INFO     PROGRESS: Finished  95/100 runs [=================== ] 95.0%, remaining: 0:00:24
+2024-03-11 14:48:41,953 pypet INFO     PROGRESS: Finished 100/100 runs [====================]100.0%
+2024-03-11 14:48:42,403 pypet.environment.MultiprocContext INFO     The Storage Queue will no longer accept new data. Hang in there for a little while. There still might be some data in the queue that needs to be stored.
+2024-03-11 14:48:42,724 pypet.environment.MultiprocContext INFO     The Storage Queue has joined.
+2024-03-11 14:48:43,034 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-11 14:48:43,079 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-11 14:48:43,087 pypet.environment.Environment INFO     
+************************************************************
+FINISHED all runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-11 14:48:43,095 pypet.environment.Environment INFO     
+************************************************************
+STARTING FINAL STORING of trajectory
+`dummy`
+************************************************************
+
+2024-03-11 14:48:43,111 pypet.storageservice.HDF5StorageService INFO     Start storing Trajectory `dummy`.
+2024-03-11 14:48:43,146 pypet.storageservice.HDF5StorageService INFO     Storing branch `config`.
+2024-03-11 14:48:43,849 pypet.storageservice.HDF5StorageService INFO     Storing branch `parameters`.
+2024-03-11 14:48:44,009 pypet.storageservice.HDF5StorageService INFO     Finished storing Trajectory `dummy`.
+2024-03-11 14:48:44,024 pypet.environment.Environment INFO     
+************************************************************
+FINISHED FINAL STORING of trajectory
+`dummy`.
+************************************************************
+
+2024-03-11 14:48:44,067 pypet.environment.Environment INFO     All runs of trajectory `dummy` were completed successfully.
+2024-03-11 14:48:44,071 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\long_sim\NoFluc_main.hdf5`.
+2024-03-11 14:48:44,106 pypet.storageservice.HDF5StorageService INFO     Loading trajectory `dummy`.
+2024-03-11 14:48:44,106 pypet.storageservice.HDF5StorageService INFO     Loading branch `config` in mode `2`.
+2024-03-11 14:48:44,277 pypet.storageservice.HDF5StorageService INFO     Loading branch `parameters` in mode `2`.
+2024-03-11 14:48:44,350 pypet.storageservice.HDF5StorageService INFO     Loading branch `results` in mode `2`.
+2024-03-11 14:48:47,219 pypet.storageservice.HDF5StorageService INFO     Start storing Trajectory `dummy`.
+2024-03-11 14:48:47,254 pypet.storageservice.HDF5StorageService INFO     Storing branch `config`.
+2024-03-11 14:48:47,322 pypet.storageservice.HDF5StorageService INFO     Storing branch `parameters`.
+2024-03-11 14:48:47,343 pypet.storageservice.HDF5StorageService INFO     Storing branch `results`.
+2024-03-11 14:48:47,597 pypet.storageservice.HDF5StorageService INFO     Finished storing Trajectory `dummy`.

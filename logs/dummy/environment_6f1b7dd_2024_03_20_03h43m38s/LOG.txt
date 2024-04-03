@@ -1,0 +1,66 @@
+2024-03-20 03:43:40,273 STDOUT INFO     Established redirection of `stdout`.
+2024-03-20 03:43:40,273 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\VariedTau\Main_TauVar.hdf5`.
+2024-03-20 03:43:40,273 pypet.environment.Environment INFO     Environment initialized.
+2024-03-20 03:43:40,273 STDOUT INFO     Adding Parameters
+2024-03-20 03:43:40,281 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-20 03:43:40,281 STDOUT INFO     added exploration
+2024-03-20 03:43:40,281 pypet.environment.Environment INFO     I am preparing the Trajectory for the experiment and initialise the store.
+2024-03-20 03:43:40,281 pypet.environment.Environment INFO     Initialising the storage for the trajectory.
+2024-03-20 03:43:40,289 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-20 03:43:40,310 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-20 03:43:40,310 pypet.environment.Environment INFO     
+************************************************************
+STARTING runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-20 03:43:40,321 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-20 03:43:40,337 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-20 03:43:42,572 pypet.environment.MultiprocContext INFO     Starting the Storage Queue!
+2024-03-20 03:43:42,653 pypet.environment.Environment INFO     Starting multiprocessing with at most 24 processes running at the same time.
+2024-03-20 03:43:42,653 pypet INFO     PROGRESS: Finished  0/12 runs [                    ]  0.0%
+2024-03-20 03:44:11,241 pypet INFO     PROGRESS: Finished  1/12 runs [=                   ]  8.3%, remaining: 0:05:14
+2024-03-20 03:44:11,244 pypet INFO     PROGRESS: Finished  2/12 runs [===                 ] 16.7%, remaining: 0:02:22
+2024-03-20 03:44:13,810 pypet INFO     PROGRESS: Finished  3/12 runs [=====               ] 25.0%, remaining: 0:01:33
+2024-03-20 03:44:16,293 pypet INFO     PROGRESS: Finished  4/12 runs [======              ] 33.3%, remaining: 0:01:07
+2024-03-20 03:44:18,537 pypet INFO     PROGRESS: Finished  5/12 runs [========            ] 41.7%, remaining: 0:00:50
+2024-03-20 03:44:20,700 pypet INFO     PROGRESS: Finished  6/12 runs [==========          ] 50.0%, remaining: 0:00:38
+2024-03-20 03:44:22,899 pypet INFO     PROGRESS: Finished  7/12 runs [===========         ] 58.3%, remaining: 0:00:28
+2024-03-20 03:44:25,178 pypet INFO     PROGRESS: Finished  8/12 runs [=============       ] 66.7%, remaining: 0:00:21
+2024-03-20 03:44:25,557 pypet.environment.MultiprocContext INFO     The Storage Queue will no longer accept new data. Hang in there for a little while. There still might be some data in the queue that needs to be stored.
+2024-03-20 03:44:25,762 pypet.environment.MultiprocContext INFO     The Storage Queue has joined.
+2024-03-20 03:44:25,985 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-20 03:44:26,002 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-20 03:44:26,013 pypet.environment.Environment INFO     
+************************************************************
+FINISHED all runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-20 03:44:26,015 pypet.environment.Environment INFO     
+************************************************************
+STARTING FINAL STORING of trajectory
+`dummy`
+************************************************************
+
+2024-03-20 03:44:26,022 pypet.storageservice.HDF5StorageService INFO     Start storing Trajectory `dummy`.
+2024-03-20 03:44:26,034 pypet.storageservice.HDF5StorageService INFO     Storing branch `config`.
+2024-03-20 03:44:26,349 pypet.storageservice.HDF5StorageService INFO     Storing branch `parameters`.
+2024-03-20 03:44:26,425 pypet.storageservice.HDF5StorageService INFO     Finished storing Trajectory `dummy`.
+2024-03-20 03:44:26,430 pypet.environment.Environment INFO     
+************************************************************
+FINISHED FINAL STORING of trajectory
+`dummy`.
+************************************************************
+
+2024-03-20 03:44:26,450 pypet.environment.Environment ERROR    Following runs of trajectory `dummy` did NOT complete: `run_00000000, run_00000001, run_00000002, run_00000003`
+2024-03-20 03:44:26,450 STDOUT INFO     Disabled redirection of `stdout`.
+2024-03-20 03:44:26,456 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\VariedTau\Main_TauVar.hdf5`.
+2024-03-20 03:44:26,468 pypet.storageservice.HDF5StorageService INFO     Loading trajectory `dummy`.
+2024-03-20 03:44:26,468 pypet.storageservice.HDF5StorageService INFO     Loading branch `config` in mode `2`.
+2024-03-20 03:44:26,529 pypet.storageservice.HDF5StorageService INFO     Loading branch `parameters` in mode `2`.
+2024-03-20 03:44:26,560 pypet.storageservice.HDF5StorageService INFO     Loading branch `results` in mode `2`.
+2024-03-20 03:44:26,625 STDOUT INFO     Starting post proc
+2024-03-20 03:44:26,625 pypet.storageservice.HDF5StorageService ERROR    Failed loading  `Trajectory dummy (`Setting up the pypet pipeline for our temporal model of character displacement. `, len:12): (config: <class 'pypet.naturalnaming.ConfigGroup'>), (parameters: <class 'pypet.naturalnaming.ParameterGroup'>), (results: <class 'pypet.naturalnaming.ResultGroup'>)`
+2024-03-20 03:44:26,625 pypet.naturalnaming.NaturalNamingInterface ERROR    Error while auto-loading `tau1` under ``.
+2024-03-20 03:45:20,941 STDOUT INFO     [4;33mReloaded modules[24m: helper_funcs, helper_exploration[0m

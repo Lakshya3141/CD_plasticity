@@ -1,0 +1,9 @@
+2024-03-20 03:43:53,881 pypet ERROR    ERROR occurred during a single run! 
+Traceback (most recent call last):
+  File "C:\Users\laksh\anaconda3\lib\site-packages\pypet\environment.py", line 259, in _sigint_handling_single_run
+    return _single_run(kwargs)
+  File "C:\Users\laksh\anaconda3\lib\site-packages\pypet\environment.py", line 314, in _single_run
+    result = runfunc(traj, *runargs, **kwrunparams)
+  File "c:\users\laksh\downloads\cd_revisedplasticity\exploration_variedtau.py", line 137, in run_main_tau
+    d1, d2, sng = env_tau(eps1[-1], rho, tau1, tau2, sig_eps)
+ZeroDivisionError: division by zero

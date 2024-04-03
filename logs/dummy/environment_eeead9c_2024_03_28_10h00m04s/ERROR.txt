@@ -1,0 +1,2 @@
+2024-03-28 10:00:54,560 pypet.storageservice.HDF5StorageService ERROR    Failed loading  `Trajectory dummy (`Setting up the pypet pipeline for our temporal model of character displacement. `, len:4): (config: <class 'pypet.naturalnaming.ConfigGroup'>), (parameters: <class 'pypet.naturalnaming.ParameterGroup'>), (results: <class 'pypet.naturalnaming.ResultGroup'>)`
+2024-03-28 10:00:54,560 pypet.naturalnaming.NaturalNamingInterface ERROR    Error while auto-loading `tau1` under ``.

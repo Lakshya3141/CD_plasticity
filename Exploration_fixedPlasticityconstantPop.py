@@ -18,7 +18,7 @@ from helper_exploration import *
 
 warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
 warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
- 
+
 generations = 300000
 
 def add_param(traj):
@@ -113,7 +113,6 @@ def main(fn, fld, traje):
     # Finally disable logging and close all log-files
     env.disable_logging()
     
-
 if __name__ == '__main__':    
 
     fld = "dummy"

@@ -1,0 +1,3 @@
+2024-03-28 10:15:30,961 STDOUT INFO     Established redirection of `stdout`.
+2024-03-28 10:15:43,549 pypet.utils.mpwrappers.QueueStorageServiceWriter INFO     Opened the hdf5 file.
+2024-03-28 17:49:25,312 pypet.utils.mpwrappers.QueueStorageServiceWriter INFO     Closed the hdf5 file.

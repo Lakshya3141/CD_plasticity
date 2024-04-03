@@ -1,0 +1,137 @@
+2024-03-12 00:16:49,583 STDOUT INFO     Established redirection of `stdout`.
+2024-03-12 00:16:49,587 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\final_sim\EvolvingPlasticity_main.hdf5`.
+2024-03-12 00:16:49,587 pypet.storageservice.HDF5StorageService INFO     You specified ``overwrite_file=True``, so I deleted the file `hdf5\final_sim\EvolvingPlasticity_main.hdf5`.
+2024-03-12 00:16:49,587 pypet.environment.Environment INFO     Environment initialized.
+2024-03-12 00:16:49,592 STDOUT INFO     Adding Parameters
+2024-03-12 00:16:49,592 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-12 00:16:49,592 STDOUT INFO     added exploration
+2024-03-12 00:16:49,592 pypet.environment.Environment INFO     I am preparing the Trajectory for the experiment and initialise the store.
+2024-03-12 00:16:49,602 pypet.environment.Environment INFO     Initialising the storage for the trajectory.
+2024-03-12 00:16:49,604 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 00:16:49,618 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 00:16:49,618 pypet.environment.Environment INFO     
+************************************************************
+STARTING runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-12 00:16:49,629 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 00:16:49,643 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 00:16:51,756 pypet.environment.MultiprocContext INFO     Starting the Storage Queue!
+2024-03-12 00:16:51,824 pypet.environment.Environment INFO     Starting multiprocessing with at most 24 processes running at the same time.
+2024-03-12 00:16:51,829 pypet INFO     PROGRESS: Finished  0/25 runs [                    ]  0.0%
+2024-03-12 00:17:02,629 pypet INFO     PROGRESS: Finished  2/25 runs [=                   ]  8.0%, remaining: 0:02:04
+2024-03-12 00:17:04,825 pypet INFO     PROGRESS: Finished  3/25 runs [==                  ] 12.0%, remaining: 0:01:35
+2024-03-12 00:17:07,097 pypet INFO     PROGRESS: Finished  4/25 runs [===                 ] 16.0%, remaining: 0:01:20
+2024-03-12 00:17:09,307 pypet INFO     PROGRESS: Finished  5/25 runs [====                ] 20.0%, remaining: 0:01:09
+2024-03-12 00:17:13,772 pypet INFO     PROGRESS: Finished  7/25 runs [=====               ] 28.0%, remaining: 0:00:56
+2024-03-12 00:17:16,053 pypet INFO     PROGRESS: Finished  8/25 runs [======              ] 32.0%, remaining: 0:00:51
+2024-03-12 00:17:18,315 pypet INFO     PROGRESS: Finished  9/25 runs [=======             ] 36.0%, remaining: 0:00:47
+2024-03-12 00:17:20,584 pypet INFO     PROGRESS: Finished 10/25 runs [========            ] 40.0%, remaining: 0:00:43
+2024-03-12 00:17:25,336 pypet INFO     PROGRESS: Finished 12/25 runs [=========           ] 48.0%, remaining: 0:00:36
+2024-03-12 00:17:27,645 pypet INFO     PROGRESS: Finished 13/25 runs [==========          ] 52.0%, remaining: 0:00:33
+2024-03-12 00:17:29,948 pypet INFO     PROGRESS: Finished 14/25 runs [===========         ] 56.0%, remaining: 0:00:29
+2024-03-12 00:17:32,418 pypet INFO     PROGRESS: Finished 15/25 runs [============        ] 60.0%, remaining: 0:00:27
+2024-03-12 00:17:36,960 pypet INFO     PROGRESS: Finished 17/25 runs [=============       ] 68.0%, remaining: 0:00:21
+2024-03-12 00:17:39,204 pypet INFO     PROGRESS: Finished 18/25 runs [==============      ] 72.0%, remaining: 0:00:18
+2024-03-12 00:17:41,443 pypet INFO     PROGRESS: Finished 19/25 runs [===============     ] 76.0%, remaining: 0:00:15
+2024-03-12 00:17:43,713 pypet INFO     PROGRESS: Finished 20/25 runs [================    ] 80.0%, remaining: 0:00:12
+2024-03-12 00:17:48,163 pypet INFO     PROGRESS: Finished 22/25 runs [=================   ] 88.0%, remaining: 0:00:07
+2024-03-12 00:17:50,406 pypet INFO     PROGRESS: Finished 23/25 runs [==================  ] 92.0%, remaining: 0:00:05
+2024-03-12 00:17:52,398 pypet INFO     PROGRESS: Finished 24/25 runs [=================== ] 96.0%, remaining: 0:00:02
+2024-03-12 00:17:54,469 pypet INFO     PROGRESS: Finished 25/25 runs [====================]100.0%
+2024-03-12 00:17:54,769 pypet.environment.MultiprocContext INFO     The Storage Queue will no longer accept new data. Hang in there for a little while. There still might be some data in the queue that needs to be stored.
+2024-03-12 00:17:54,979 pypet.environment.MultiprocContext INFO     The Storage Queue has joined.
+2024-03-12 00:17:55,165 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 00:17:55,185 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 00:17:55,196 pypet.environment.Environment INFO     
+************************************************************
+FINISHED all runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-12 00:17:55,198 pypet.environment.Environment INFO     
+************************************************************
+STARTING FINAL STORING of trajectory
+`dummy`
+************************************************************
+
+2024-03-12 00:17:55,205 pypet.storageservice.HDF5StorageService INFO     Start storing Trajectory `dummy`.
+2024-03-12 00:17:55,220 pypet.storageservice.HDF5StorageService INFO     Storing branch `config`.
+2024-03-12 00:17:55,517 pypet.storageservice.HDF5StorageService INFO     Storing branch `parameters`.
+2024-03-12 00:17:55,583 pypet.storageservice.HDF5StorageService INFO     Finished storing Trajectory `dummy`.
+2024-03-12 00:17:55,597 pypet.environment.Environment INFO     
+************************************************************
+FINISHED FINAL STORING of trajectory
+`dummy`.
+************************************************************
+
+2024-03-12 00:17:55,619 pypet.environment.Environment INFO     All runs of trajectory `dummy` were completed successfully.
+2024-03-12 00:17:55,620 STDOUT INFO     Disabled redirection of `stdout`.
+2024-03-12 00:17:55,621 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\final_sim\EvolvingPlasticity_main.hdf5`.
+2024-03-12 00:17:55,633 pypet.storageservice.HDF5StorageService INFO     Loading trajectory `dummy`.
+2024-03-12 00:17:55,633 pypet.storageservice.HDF5StorageService INFO     Loading branch `config` in mode `2`.
+2024-03-12 00:17:55,699 pypet.storageservice.HDF5StorageService INFO     Loading branch `parameters` in mode `2`.
+2024-03-12 00:17:55,734 pypet.storageservice.HDF5StorageService INFO     Loading branch `results` in mode `2`.
+2024-03-12 00:17:55,910 STDOUT INFO     Starting post proc
+2024-03-12 00:17:56,035 STDOUT INFO     hdf5\final_sim\EvolvingPlasticity_main.csv
+2024-03-12 00:17:56,042 pypet.storageservice.HDF5StorageService INFO     Start storing Trajectory `dummy`.
+2024-03-12 00:17:56,055 pypet.storageservice.HDF5StorageService INFO     Storing branch `config`.
+2024-03-12 00:17:56,085 pypet.storageservice.HDF5StorageService INFO     Storing branch `parameters`.
+2024-03-12 00:17:56,095 pypet.storageservice.HDF5StorageService INFO     Storing branch `results`.
+2024-03-12 00:17:56,155 pypet.storageservice.HDF5StorageService INFO     Finished storing Trajectory `dummy`.
+2024-03-12 00:17:56,161 STDOUT INFO     finished
+2024-03-12 00:23:25,210 STDOUT INFO     [4;33mReloaded modules[24m: helper_funcs, helper_exploration[0m
+2024-03-12 00:23:25,220 STDOUT INFO     STARTING Fluc_main.csv
+2024-03-12 00:23:25,233 STDOUT INFO     1.4500000000000002
+2024-03-12 00:23:25,236 STDOUT INFO     [3.]
+2024-03-12 00:23:25,236 STDOUT INFO     0.5
+2024-03-12 00:23:25,236 STDOUT INFO     1
+2024-03-12 00:23:25,236 STDOUT INFO     0.5
+2024-03-12 00:23:25,236 STDOUT INFO     10.000000000000002
+2024-03-12 00:23:25,236 STDOUT INFO     0.1
+2024-03-12 00:23:25,297 STDOUT INFO     STARTING NoFluc_main.csv
+2024-03-12 00:23:25,308 STDOUT INFO     1.4500000000000002
+2024-03-12 00:23:25,308 STDOUT INFO     [3.]
+2024-03-12 00:23:25,308 STDOUT INFO     0.5
+2024-03-12 00:23:25,313 STDOUT INFO     1
+2024-03-12 00:23:25,313 STDOUT INFO     0.5
+2024-03-12 00:23:25,313 STDOUT INFO     10.000000000000002
+2024-03-12 00:23:25,314 STDOUT INFO     0.1
+2024-03-12 00:23:25,375 STDOUT INFO     STARTING EvolvingPlasticity_main.csv
+2024-03-12 00:23:25,385 STDOUT INFO     1.4500000000000002
+2024-03-12 00:23:25,385 STDOUT INFO     [3.]
+2024-03-12 00:23:25,385 STDOUT INFO     0.5
+2024-03-12 00:23:25,385 STDOUT INFO     1
+2024-03-12 00:23:25,390 STDOUT INFO     0.5
+2024-03-12 00:23:25,390 STDOUT INFO     10.000000000000002
+2024-03-12 00:23:25,390 STDOUT INFO     0.1
+2024-03-12 00:23:46,277 STDOUT INFO     [4;33mReloaded modules[24m: helper_funcs[0m
+2024-03-12 00:23:46,287 STDOUT INFO     STARTING Fluc_main.csv
+2024-03-12 00:23:46,292 STDOUT INFO     1.4500000000000002
+2024-03-12 00:23:46,297 STDOUT INFO     [3.]
+2024-03-12 00:23:46,297 STDOUT INFO     0.5
+2024-03-12 00:23:46,297 STDOUT INFO     1
+2024-03-12 00:23:46,297 STDOUT INFO     0.5
+2024-03-12 00:23:46,297 STDOUT INFO     10.000000000000002
+2024-03-12 00:23:46,297 STDOUT INFO     0.1
+2024-03-12 00:23:46,358 STDOUT INFO     STARTING NoFluc_main.csv
+2024-03-12 00:23:46,363 STDOUT INFO     1.4500000000000002
+2024-03-12 00:23:46,368 STDOUT INFO     [3.]
+2024-03-12 00:23:46,368 STDOUT INFO     0.5
+2024-03-12 00:23:46,368 STDOUT INFO     1
+2024-03-12 00:23:46,368 STDOUT INFO     0.5
+2024-03-12 00:23:46,368 STDOUT INFO     10.000000000000002
+2024-03-12 00:23:46,368 STDOUT INFO     0.1
+2024-03-12 00:23:46,424 STDOUT INFO     STARTING EvolvingPlasticity_main.csv
+2024-03-12 00:23:46,429 STDOUT INFO     1.4500000000000002
+2024-03-12 00:23:46,429 STDOUT INFO     [3.]
+2024-03-12 00:23:46,429 STDOUT INFO     0.5
+2024-03-12 00:23:46,434 STDOUT INFO     1
+2024-03-12 00:23:46,434 STDOUT INFO     0.5
+2024-03-12 00:23:46,434 STDOUT INFO     10.000000000000002
+2024-03-12 00:23:46,434 STDOUT INFO     0.1
+2024-03-12 00:24:04,864 STDOUT INFO     [4;33mReloaded modules[24m: helper_funcs[0m
+2024-03-12 00:24:04,891 STDOUT INFO     STARTING Fluc_main.csv
+2024-03-12 00:24:04,955 STDOUT INFO     STARTING NoFluc_main.csv
+2024-03-12 00:24:05,016 STDOUT INFO     STARTING EvolvingPlasticity_main.csv

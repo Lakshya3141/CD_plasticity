@@ -1,0 +1,32 @@
+2024-03-20 03:46:02,381 pypet.storageservice.HDF5StorageService ERROR    Failed loading  `Trajectory dummy (`Setting up the pypet pipeline for our temporal model of character displacement. `, len:9): (config: <class 'pypet.naturalnaming.ConfigGroup'>), (parameters: <class 'pypet.naturalnaming.ParameterGroup'>), (results: <class 'pypet.naturalnaming.ResultGroup'>)`
+2024-03-20 03:46:02,381 pypet.naturalnaming.NaturalNamingInterface ERROR    Error while auto-loading `tau1` under ``.
+2024-03-23 15:32:02,011 Comm ERROR    Exception in comm_msg for 70762c2de63511ee879bbe9ad736c474
+Traceback (most recent call last):
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\commbase.py", line 347, in _handle_remote_call
+    self._set_call_return_value(msg_dict, return_value)
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\commbase.py", line 384, in _set_call_return_value
+    self._send_message('remote_call_reply', content=content, data=data,
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\frontendcomm.py", line 109, in _send_message
+    return super(FrontendComm, self)._send_message(*args, **kwargs)
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\commbase.py", line 238, in _send_message
+    raise CommError("The comm is not connected.")
+spyder_kernels.comms.commbase.CommError: The comm is not connected.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\laksh\anaconda3\lib\site-packages\comm\base_comm.py", line 263, in comm_msg
+    comm.handle_msg(msg)
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\frontendcomm.py", line 256, in handle_msg
+    comm._msg_callback(msg)
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\commbase.py", line 333, in _comm_message
+    self._message_handlers[spyder_msg_type](
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\commbase.py", line 351, in _handle_remote_call
+    self._set_call_return_value(msg_dict, exc_infos, is_error=True)
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\commbase.py", line 384, in _set_call_return_value
+    self._send_message('remote_call_reply', content=content, data=data,
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\frontendcomm.py", line 109, in _send_message
+    return super(FrontendComm, self)._send_message(*args, **kwargs)
+  File "C:\Users\laksh\anaconda3\lib\site-packages\spyder_kernels\comms\commbase.py", line 238, in _send_message
+    raise CommError("The comm is not connected.")
+spyder_kernels.comms.commbase.CommError: The comm is not connected.

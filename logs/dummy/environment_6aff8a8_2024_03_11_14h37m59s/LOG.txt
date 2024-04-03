@@ -1,0 +1,24 @@
+2024-03-11 14:38:01,850 STDOUT INFO     Established redirection of `stdout`.
+2024-03-11 14:38:01,850 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\long_sim\NoFluc_main.hdf5`.
+2024-03-11 14:38:01,860 pypet.storageservice.HDF5StorageService INFO     You specified ``overwrite_file=True``, so I deleted the file `hdf5\long_sim\NoFluc_main.hdf5`.
+2024-03-11 14:38:01,865 pypet.environment.Environment INFO     Environment initialized.
+2024-03-11 14:38:01,865 STDOUT INFO     Adding Parameters
+2024-03-11 14:38:01,870 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-11 14:38:01,875 STDOUT INFO     added exploration
+2024-03-11 14:38:01,880 pypet.environment.Environment INFO     I am preparing the Trajectory for the experiment and initialise the store.
+2024-03-11 14:38:01,880 pypet.environment.Environment INFO     Initialising the storage for the trajectory.
+2024-03-11 14:38:01,895 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-11 14:38:01,945 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-11 14:38:01,950 pypet.environment.Environment INFO     
+************************************************************
+STARTING runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-11 14:38:01,970 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-11 14:38:02,010 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-11 14:38:07,837 pypet.environment.MultiprocContext INFO     Starting the Storage Queue!
+2024-03-11 14:38:07,988 pypet.environment.Environment INFO     Starting multiprocessing with at most 24 processes running at the same time.
+2024-03-11 14:38:07,988 pypet INFO     PROGRESS: Finished   0/400 runs [                    ]  0.0%
+2024-03-11 14:39:54,095 pypet INFO     PROGRESS: Finished  20/400 runs [=                   ]  5.0%, remaining: 0:33:35
+2024-03-11 14:40:13,390 pypet.environment.MultiprocContext INFO     The Storage Queue will no longer accept new data. Hang in there for a little while. There still might be some data in the queue that needs to be stored.

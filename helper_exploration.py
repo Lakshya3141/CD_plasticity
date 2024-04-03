@@ -16,106 +16,13 @@ import os # For path names working under Linux and Windows
 from numba.core.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning
 import warnings
 
+bins = 3
 
-bins = 2
+# Removed run_main0 definition, not really used anywhere!!!
+# Also removed lin_sel which had all variables in squares, ofc not helpful!!!
 
-def run_main0(traj):
-    a0 = traj.a0
-    b0 = traj.b0
-    n0 = traj.n0
-    plast = traj.plast
-    grow = traj.grow
-    A = traj.A
-    B = traj.B
-    Gaa = traj.Gaa
-    Gbb = traj.Gbb
-    kar = traj.kar
-    rho = traj.rho
-    tau = traj.tau
-    r = traj.r
-    sig_s = traj.sig_s
-    sig_u = traj.sig_u
-    sig_e = traj.sig_e
-    sig_eps = traj.sig_eps
-    tot = traj.tot
-    seed = traj.seed
-    
-    np.random.seed(int(time.time())) if seed < 0 else np.random.seed(seed)
-    
-    for i in range(0,2):
-        if plast[i] <= 0: Gbb[i] = 0
-        if plast[i] < 0: b0[i] = 0
-        if plast[i] == -2: B[i] = 0
-
-    a = [a0]
-    b = [b0]
-    n = [n0]
-    mls = []
-    mlc = []
-    sgs = []
-    sgc = []
-    z = []
-    theta = []
-    eps = [np.random.normal(0, sig_eps)]
-    epss = []
-    epsd = []
-
-
-    start = time.time()
-    for i in range(tot):
-        eps.append( dev_env( eps[-1], rho, tau, sig_eps))
-        eps.append( sel_env( eps[-1], rho, tau, sig_eps))
-        epsd.append(eps[-2])
-        epss.append(eps[-1])
-        theta.append(list(A + B * eps[-1]))
-        z.append(a[-1] + b[-1] * eps[-2])
-        sig_z = np.sqrt(Gaa + Gbb * eps[-2] ** 2 + sig_e ** 2)
-        
-        mls.append(np.array([mls_val( z[-1][0], theta[-1][0], sig_z[0], sig_s),
-                            mls_val( z[-1][1], theta[-1][1], sig_z[1], sig_s)]))
-        
-        mlc.append(np.array([mlc_val(z[-1][0], z[-1][1], n[-1][0], n[-1][1], r, kar[0], sig_u, sig_z[0]),
-                             mlc_val(z[-1][1], z[-1][0], n[-1][1], n[-1][0], r, kar[1], sig_u, sig_z[1])]))
-        
-        #ml.append(r + mls[-1] + mlc[-1])
-        
-        sgs.append(np.array([sgs_val( z[-1][0], theta[-1][0], sig_s),
-                             sgs_val( z[-1][1], theta[-1][1], sig_s)]))
-        
-        sgc.append(np.array([sgc_val(z[-1][0], z[-1][1], n[-1][1], r, kar[0], sig_u, sig_z[0]),
-                             sgc_val(z[-1][1], z[-1][0], n[-1][0], r, kar[1], sig_u, sig_z[1])]))
-        
-        #sg.append(sgs[-1]+sgc[-1])
-        
-        a.append(a[-1] + (sgs[-1] + sgc[-1]) * Gaa)
-        b.append(b[-1] + (sgs[-1] + sgc[-1]) * Gbb * epsd[-1])
-        n.append(pop_grow(n[-1], grow, r + mls[-1] + mlc[-1]))
-    
-    t_run = time.time() - start
-    print(f'For loop: {t_run} seconds')
-    
-    a = np.array(a[1:])
-    b = np.array(b[1:])
-    n = np.array(n[1:])
-    mls = np.array(mls)
-    mlc = np.array(mlc)
-    sgs = np.array(sgs)
-    sgc = np.array(sgc)
-    epss = np.array(epss)
-    epsd = np.array(epsd)
-    eps = eps[1:]
-    
-    traj.f_add_result('sp.$', a_=a, b_=b, n_=n,
-                      epss=epss, epsd=epsd,
-                      comment='Contains all the development of various arrays')
-    
-    # traj.f_add_result('sp.$', a_=a, b_=b, n_=n,
-    #                   mls=mls, mlc=mlc, sgs=sgs, sgc=sgc,
-    #                   epss=epss, epsd=epsd, eps=eps,
-    #                   comment='Contains all the development of various arrays')
-    #return a, b, n, mls, mlc, sgs, sgc, eps, epss, epsd, t_run
-    return t_run
-
+# Main function for simulation given the tau for both the species is similar!
+# Used in {Exploration_fixedPlasticityconstantPop.py and Exlploration_plasticity.py}
 def run_main1(traj):
     a0 = traj.a0
     b0 = traj.b0
@@ -240,19 +147,8 @@ def run_main1(traj):
     #return a, b, n, mls, mlc, sgs, sgc, eps, epss, epsd, t_run
     return t_run
 
-def lin_compsel(traj):
-    """ Here is where you change all the kinda exploration you wanna do!"""
-    print('Exploring across sig_s and sig_u')
-    
-    explore_dict = {'sig_u': [i.item() for i in np.arange(1.0, 9.0, 8.0/100)],
-                    'sig_s': [i.item() for i in np.arange(1.0, 35.0, 34.0/100)]}
-    
-    explore_dict = cartesian_product(explore_dict, ('sig_s','sig_u'))
-                    
-    
-    traj.f_explore(explore_dict)
-    print('added exploration')
-
+# Defines parameret exploration on a linear scale after taking log!!
+# used in Exploration_plasticity.py ONLY
 def log_compsel(traj):
     """ Here is where you change all the kinda exploration you wanna do!"""
     print('Exploring across sig_s and sig_u')
@@ -265,7 +161,9 @@ def log_compsel(traj):
     
     traj.f_explore(explore_dict)
     print('added exploration')
-    
+
+# Post processing that saves the trajectory into csv files for
+# {Exploration_fixedPlasticityconstantPop.py and Exlploration_plasticity.py}
 def post_proc(fn, fld, traje):
     
     traj = Trajectory(traje, add_time=False)

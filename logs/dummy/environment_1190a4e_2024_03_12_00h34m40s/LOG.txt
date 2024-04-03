@@ -1,0 +1,22 @@
+2024-03-12 00:34:42,506 STDOUT INFO     Established redirection of `stdout`.
+2024-03-12 00:34:42,507 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\final_sim\NoFluc_main.hdf5`.
+2024-03-12 00:34:42,508 pypet.storageservice.HDF5StorageService INFO     You specified ``overwrite_file=True``, so I deleted the file `hdf5\final_sim\NoFluc_main.hdf5`.
+2024-03-12 00:34:42,510 pypet.environment.Environment INFO     Environment initialized.
+2024-03-12 00:34:42,510 STDOUT INFO     Adding Parameters
+2024-03-12 00:34:42,511 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-12 00:34:42,577 STDOUT INFO     added exploration
+2024-03-12 00:34:42,578 pypet.environment.Environment INFO     I am preparing the Trajectory for the experiment and initialise the store.
+2024-03-12 00:34:42,579 pypet.environment.Environment INFO     Initialising the storage for the trajectory.
+2024-03-12 00:34:42,588 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 00:34:42,662 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 00:34:42,664 pypet.environment.Environment INFO     
+************************************************************
+STARTING runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-12 00:34:42,672 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 00:34:42,689 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 00:34:44,707 pypet.environment.MultiprocContext INFO     Starting the Storage Queue!
+2024-03-12 00:34:44,777 pypet.environment.Environment INFO     Starting multiprocessing with at most 24 processes running at the same time.
+2024-03-12 00:34:44,778 pypet INFO     PROGRESS: Finished     0/10000 runs [                    ]  0.0%

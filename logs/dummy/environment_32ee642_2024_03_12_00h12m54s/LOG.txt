@@ -1,0 +1,26 @@
+2024-03-12 00:12:56,295 STDOUT INFO     Established redirection of `stdout`.
+2024-03-12 00:12:56,297 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\final_sim\EvolvingPlasticity_main.hdf5`.
+2024-03-12 00:12:56,300 pypet.storageservice.HDF5StorageService INFO     You specified ``overwrite_file=True``, so I deleted the file `hdf5\final_sim\EvolvingPlasticity_main.hdf5`.
+2024-03-12 00:12:56,302 pypet.environment.Environment INFO     Environment initialized.
+2024-03-12 00:12:56,302 STDOUT INFO     Adding Parameters
+2024-03-12 00:12:56,305 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-12 00:12:56,369 STDOUT INFO     added exploration
+2024-03-12 00:12:56,369 pypet.environment.Environment INFO     I am preparing the Trajectory for the experiment and initialise the store.
+2024-03-12 00:12:56,377 pypet.environment.Environment INFO     Initialising the storage for the trajectory.
+2024-03-12 00:12:56,380 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 00:12:56,450 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 00:12:56,456 pypet.environment.Environment INFO     
+************************************************************
+STARTING runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-12 00:12:56,466 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-12 00:12:56,480 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-12 00:12:56,581 pypet.environment.MultiprocContext INFO     Starting the Storage Queue!
+2024-03-12 00:12:56,653 pypet.environment.Environment INFO     Starting multiprocessing with at most 24 processes running at the same time.
+2024-03-12 00:12:56,653 pypet INFO     PROGRESS: Finished     0/10000 runs [                    ]  0.0%
+2024-03-12 00:12:56,659 pypet.environment.MultiprocContext INFO     The Storage Queue will no longer accept new data. Hang in there for a little while. There still might be some data in the queue that needs to be stored.
+2024-03-12 00:12:59,115 pypet.environment.MultiprocContext INFO     The Storage Queue has joined.
+2024-03-12 00:14:32,181 STDOUT INFO     [4;33mReloaded modules[24m: helper_funcs, helper_exploration[0m
+2024-03-12 00:14:32,200 STDOUT INFO     starting 1 OUT OF 4

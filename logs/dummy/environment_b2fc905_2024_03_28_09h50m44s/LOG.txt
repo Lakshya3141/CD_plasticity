@@ -1,0 +1,69 @@
+2024-03-28 09:50:45,802 STDOUT INFO     Established redirection of `stdout`.
+2024-03-28 09:50:45,802 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\tau_exp\LowDiff.hdf5`.
+2024-03-28 09:50:45,802 pypet.storageservice.HDF5StorageService INFO     You specified ``overwrite_file=True``, so I deleted the file `hdf5\tau_exp\LowDiff.hdf5`.
+2024-03-28 09:50:45,802 pypet.environment.Environment INFO     Environment initialized.
+2024-03-28 09:50:45,802 STDOUT INFO     Adding Parameters
+2024-03-28 09:50:45,818 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-28 09:50:45,818 STDOUT INFO     added exploration
+2024-03-28 09:50:45,818 pypet.environment.Environment INFO     I am preparing the Trajectory for the experiment and initialise the store.
+2024-03-28 09:50:45,829 pypet.environment.Environment INFO     Initialising the storage for the trajectory.
+2024-03-28 09:50:45,834 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-28 09:50:45,850 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-28 09:50:45,866 pypet.environment.Environment INFO     
+************************************************************
+STARTING runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-28 09:50:45,881 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-28 09:50:45,912 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-28 09:50:50,238 pypet.environment.MultiprocContext INFO     Starting the Storage Queue!
+2024-03-28 09:50:50,379 pypet.environment.Environment INFO     Starting multiprocessing with at most 24 processes running at the same time.
+2024-03-28 09:50:50,379 pypet INFO     PROGRESS: Finished 0/9 runs [                    ]  0.0%
+2024-03-28 09:52:00,642 pypet.environment.MultiprocContext INFO     The Storage Queue will no longer accept new data. Hang in there for a little while. There still might be some data in the queue that needs to be stored.
+2024-03-28 09:52:00,955 pypet.environment.MultiprocContext INFO     The Storage Queue has joined.
+2024-03-28 09:52:01,301 pypet.storageservice.HDF5StorageService INFO     Initialising storage or updating meta data of Trajectory `dummy`.
+2024-03-28 09:52:01,333 pypet.storageservice.HDF5StorageService INFO     Finished init or meta data update for `dummy`.
+2024-03-28 09:52:01,349 pypet.environment.Environment INFO     
+************************************************************
+FINISHED all runs of trajectory
+`dummy`.
+************************************************************
+
+2024-03-28 09:52:01,349 pypet.environment.Environment INFO     
+************************************************************
+STARTING FINAL STORING of trajectory
+`dummy`
+************************************************************
+
+2024-03-28 09:52:01,364 pypet.storageservice.HDF5StorageService INFO     Start storing Trajectory `dummy`.
+2024-03-28 09:52:01,396 pypet.storageservice.HDF5StorageService INFO     Storing branch `config`.
+2024-03-28 09:52:02,047 pypet.storageservice.HDF5StorageService INFO     Storing branch `parameters`.
+2024-03-28 09:52:02,203 pypet.storageservice.HDF5StorageService INFO     Finished storing Trajectory `dummy`.
+2024-03-28 09:52:02,220 pypet.environment.Environment INFO     
+************************************************************
+FINISHED FINAL STORING of trajectory
+`dummy`.
+************************************************************
+
+2024-03-28 09:52:02,266 pypet.environment.Environment ERROR    Following runs of trajectory `dummy` did NOT complete: `run_00000000, run_00000001, run_00000002, run_00000003, run_00000004, run_00000005, run_00000006, run_00000007, run_00000008`
+2024-03-28 09:52:02,266 STDOUT INFO     Disabled redirection of `stdout`.
+2024-03-28 09:52:02,266 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\tau_exp\LowDiff.hdf5`.
+2024-03-28 09:52:02,298 pypet.storageservice.HDF5StorageService INFO     Loading trajectory `dummy`.
+2024-03-28 09:52:02,298 pypet.storageservice.HDF5StorageService INFO     Loading branch `config` in mode `2`.
+2024-03-28 09:52:02,469 pypet.storageservice.HDF5StorageService INFO     Loading branch `parameters` in mode `2`.
+2024-03-28 09:52:02,532 STDOUT INFO     Starting post proc
+2024-03-28 09:52:02,548 pypet.storageservice.HDF5StorageService ERROR    Cannot find `results` the hdf5 node `results` does not exist!
+2024-03-28 09:52:02,548 pypet.storageservice.HDF5StorageService ERROR    Failed loading  `ResultGroup results: `
+2024-03-28 09:52:02,548 pypet.naturalnaming.NaturalNamingInterface ERROR    Error while auto-loading `sp` under `results`.
+2024-03-28 09:55:19,897 STDOUT INFO     starting 1 OUT OF 3
+2024-03-28 09:55:19,899 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\tau_exp\LowDiff.hdf5`.
+2024-03-28 09:55:19,913 pypet.storageservice.HDF5StorageService INFO     Loading trajectory `dummy`.
+2024-03-28 09:55:19,913 pypet.storageservice.HDF5StorageService INFO     Loading branch `config` in mode `2`.
+2024-03-28 09:55:20,070 pypet.storageservice.HDF5StorageService INFO     Loading branch `parameters` in mode `2`.
+2024-03-28 09:55:20,132 STDOUT INFO     Starting post proc
+2024-03-28 09:55:20,148 pypet.storageservice.HDF5StorageService ERROR    Cannot find `results` the hdf5 node `results` does not exist!
+2024-03-28 09:55:20,166 pypet.storageservice.HDF5StorageService ERROR    Failed loading  `ResultGroup results: `
+2024-03-28 09:55:20,166 pypet.naturalnaming.NaturalNamingInterface ERROR    Error while auto-loading `sp` under `results`.
+2024-03-28 09:58:49,555 STDOUT INFO     [4;33mReloaded modules[24m: helper_funcs, helper_exploration[0m
+2024-03-28 09:58:49,602 STDOUT INFO     starting 1 OUT OF 3

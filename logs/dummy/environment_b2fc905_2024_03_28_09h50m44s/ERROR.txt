@@ -1,0 +1,7 @@
+2024-03-28 09:52:02,266 pypet.environment.Environment ERROR    Following runs of trajectory `dummy` did NOT complete: `run_00000000, run_00000001, run_00000002, run_00000003, run_00000004, run_00000005, run_00000006, run_00000007, run_00000008`
+2024-03-28 09:52:02,548 pypet.storageservice.HDF5StorageService ERROR    Cannot find `results` the hdf5 node `results` does not exist!
+2024-03-28 09:52:02,548 pypet.storageservice.HDF5StorageService ERROR    Failed loading  `ResultGroup results: `
+2024-03-28 09:52:02,548 pypet.naturalnaming.NaturalNamingInterface ERROR    Error while auto-loading `sp` under `results`.
+2024-03-28 09:55:20,148 pypet.storageservice.HDF5StorageService ERROR    Cannot find `results` the hdf5 node `results` does not exist!
+2024-03-28 09:55:20,166 pypet.storageservice.HDF5StorageService ERROR    Failed loading  `ResultGroup results: `
+2024-03-28 09:55:20,166 pypet.naturalnaming.NaturalNamingInterface ERROR    Error while auto-loading `sp` under `results`.

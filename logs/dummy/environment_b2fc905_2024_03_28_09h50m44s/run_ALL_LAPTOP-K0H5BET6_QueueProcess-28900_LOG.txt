@@ -1,0 +1,1 @@
+2024-03-28 09:50:56,834 STDOUT INFO     Established redirection of `stdout`.

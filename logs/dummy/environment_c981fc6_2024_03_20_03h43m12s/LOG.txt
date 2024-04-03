@@ -1,0 +1,6 @@
+2024-03-20 03:43:15,122 STDOUT INFO     Established redirection of `stdout`.
+2024-03-20 03:43:15,122 pypet.storageservice.HDF5StorageService INFO     I will use the hdf5 file `hdf5\VariedTau\Main_TauVar.hdf5`.
+2024-03-20 03:43:15,122 pypet.environment.Environment INFO     Environment initialized.
+2024-03-20 03:43:15,122 STDOUT INFO     Adding Parameters
+2024-03-20 03:43:15,122 STDOUT INFO     Exploring across sig_s and sig_u
+2024-03-20 03:43:38,469 STDOUT INFO     [4;33mReloaded modules[24m: helper_funcs, helper_exploration[0m

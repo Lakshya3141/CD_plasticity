@@ -19,7 +19,7 @@ from helper_exploration import *
 warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
 warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
 
-generations = 300000
+generations = 300000   #300000
 
 def add_parameters0(traj):
     """Adds all parameters to `traj`"""
@@ -32,7 +32,7 @@ def add_parameters0(traj):
                          comment='Strength of stabilising selection')
     traj.f_add_parameter('com.sig_u', np.sqrt(10.0).item(),
                          comment='Utilisation curve variance')
-    traj.f_add_parameter('com.sig_eps', np.sqrt(2).item(),
+    traj.f_add_parameter('com.sig_eps', np.sqrt(10).item(),
                         comment='Strength of environmental fluctuations')
     traj.f_add_parameter('com.rho', 0.5,
                         comment='Autocorrelation between developmental'
@@ -86,7 +86,7 @@ def add_parameters1(traj):
                          comment='Strength of stabilising selection')
     traj.f_add_parameter('com.sig_u', np.sqrt(10.0).item(),
                          comment='Utilisation curve variance')
-    traj.f_add_parameter('com.sig_eps', np.sqrt(2).item(),
+    traj.f_add_parameter('com.sig_eps', np.sqrt(10).item(),
                         comment='Strength of environmental fluctuations')
     traj.f_add_parameter('com.rho', 0.5,
                         comment='Autocorrelation between developmental'
@@ -141,7 +141,7 @@ def add_parameters2(traj):
                          comment='Strength of stabilising selection')
     traj.f_add_parameter('com.sig_u', np.sqrt(10.0).item(),
                          comment='Utilisation curve variance')
-    traj.f_add_parameter('com.sig_eps', np.sqrt(2).item(),
+    traj.f_add_parameter('com.sig_eps', np.sqrt(10).item(),
                         comment='Strength of environmental fluctuations')
     traj.f_add_parameter('com.rho', 0.5,
                         comment='Autocorrelation between developmental'
@@ -196,7 +196,7 @@ def add_parameters3(traj):
                          comment='Strength of stabilising selection')
     traj.f_add_parameter('com.sig_u', np.sqrt(10.0).item(),
                          comment='Utilisation curve variance')
-    traj.f_add_parameter('com.sig_eps', np.sqrt(2).item(),
+    traj.f_add_parameter('com.sig_eps', np.sqrt(10).item(),
                         comment='Strength of environmental fluctuations')
     traj.f_add_parameter('com.rho', 0.5,
                         comment='Autocorrelation between developmental'
@@ -240,7 +240,7 @@ def add_parameters3(traj):
     #ht = 10000 #(sig_s ** 2) / (Gbb[0] * (sig_eps ** 2)) * np.log(100 / ci)
     #tot = int(np.ceil(2 * ht))
 
-def main(fn, fld, traje, i):
+def main_run(fn, fld, traje, i):
     filename = os.path.join('hdf5', fld, fn)
     env = Environment(trajectory=traje,
                       comment='Setting up the pypet pipeline for our '
@@ -277,12 +277,21 @@ def main(fn, fld, traje, i):
 
 if __name__ == '__main__':    
 
-    fn_ = ['NoFluc_main.hdf5','Fluc_main.hdf5','EvolvingPlasticity_main.hdf5']
-    fld = "long_sim"
+    fn_ = ['NoFluc_main.hdf5','Fluc_main.hdf5', "dummy", 'EvolvingPlasticity_main.hdf5']
+    fld = "final_sim"
+    plasts = [3]
+    # i = 0
+    # traje = 'dummy'
+    # print(f'starting {i+1} OUT OF 4')
+    # fn = fn_[i]
+    # main_run(fn, fld, traje, i)
+    # post_proc(fn, fld, traje)
+    # print('finished')
     
-    for i in range(0,4):
+    for i in plasts:
         traje = 'dummy'
         print(f'starting {i+1} OUT OF 4')
         fn = fn_[i]
+        main_run(fn, fld, traje, i)
         post_proc(fn, fld, traje)
         print('finished')

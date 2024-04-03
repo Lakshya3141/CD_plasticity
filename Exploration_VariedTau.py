@@ -77,7 +77,7 @@ def param_explore(traj):
     """ Here is where you change all the kinda exploration you wanna do!"""
     print('Exploring across sig_s and sig_u')
     
-    explore_dict = {'sp.tau': [np.array([i, j]) for i in np.arange(0, 1.0, 0.4) for j in np.range(0.0, 1.0, 0.3)]}
+    explore_dict = {'sp.tau': [np.array([i, j]) for i in np.arange(0.1, 1.0, 0.4) for j in np.arange(0.1, 1.0, 0.3)]}
     
     # explore_dict = cartesian_product(explore_dict, ('sp.b0','sp.n0'))
                     
@@ -341,7 +341,7 @@ def main(fn, fld, traje):
 
 if __name__ == '__main__':    
 
-    fld = "dummy"
+    fld = "VariedTau"
     # plast = [np.array([-2, -2]), np.array([-1, -1]), [0, 0], [1, 1]]
     # plast = [np.array(i) for i in plast]
     # rb0 = [[2.5, 2.51], [2.5, 2.51], [1.5, 1.5], [2.5, 2.51]]

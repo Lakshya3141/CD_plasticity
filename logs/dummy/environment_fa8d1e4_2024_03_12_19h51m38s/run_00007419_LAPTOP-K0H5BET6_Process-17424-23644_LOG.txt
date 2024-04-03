@@ -1,0 +1,7 @@
+2024-03-13 01:37:50,563 STDOUT INFO     Established redirection of `stdout`.
+2024-03-13 01:37:50,563 pypet INFO     
+=========================================
+ Starting single run #7419 of 10000 
+=========================================
+
+2024-03-13 01:38:03,541 STDOUT INFO     For loop: 12.978064060211182 seconds
